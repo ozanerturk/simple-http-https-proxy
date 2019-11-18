@@ -3,7 +3,7 @@ var http = require("http");
 var url = require("url");
 var net = require('net');
 var fs = require('fs')
-var filename =new Date().toLocaleString().split("/").join("-").split(":").join("-").replace(", ","T").substring(0,19).trim();
+var filename =new Date().toLocaleString().split("/").join("-").split(":").join("-").replace(", ","T").substring(0,19).trim() +".log"
 console.log(filename);
 const uniqueDomains = new Set();
 var server = http.createServer(function (req, res) {
